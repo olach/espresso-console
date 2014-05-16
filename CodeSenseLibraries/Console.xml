@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+
+	<set name="se.olachristensson.sugar.console.api">
+		<completion string="console">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\.)|[^\.]</matched-suffix>
+					<transform-into>(?1::\.)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="debugger">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(;)|[^;]</matched-suffix>
+					<transform-into>(?1::;)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="se.olachristensson.sugar.console.api.methods.console">
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\()|[^(]</matched-suffix>
+				<transform-into>(?1::(\);)$0</transform-into>
+			</append-dynamic>
+		</behavior>
+		<completion string="assert" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:expression}, ${2:object}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="clear" ranking="+1"/>
+		<completion string="count" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:[label]}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="dir" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="dirxml" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="error" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}${2:, ${3:[object...]}}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="group" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}${2:, ${3:[object...]}}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="groupCollapsed" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}${2:, ${3:[object...]}}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="groupEnd" ranking="+1"/>
+		<completion string="info" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}${2:, ${3:[object...]}}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="log" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}${2:, ${3:[object...]}}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="profile" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:[label]}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="profileEnd" ranking="+1"/>
+		<completion string="time" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:label}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="timeEnd" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:label}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="timeStamp" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:[label]}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="trace" ranking="+1"/>
+		<completion string="warn" ranking="+1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\()|[^(]</matched-suffix>
+					<transform-into>(?1::(${1:object}${2:, ${3:[object...]}}\);)$0</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+
+</codesense>

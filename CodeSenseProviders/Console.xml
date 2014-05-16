@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense>
+	
+	<provider>
+		<selector>js, js *:not(string,string *,comment,regex,regex *)</selector>
+		<completions>se.olachristensson.sugar.console.api</completions>
+		<complete-match>(?&lt;!\.)\b[a-zA-Z]*</complete-match>
+	</provider>
+	
+	<provider>
+		<selector>js, js *:not(string,string *,comment,regex,regex *)</selector>
+		<completions>se.olachristensson.sugar.console.api.methods.console</completions>
+		<complete-match capture="1">\bconsole\.+([a-zA-Z]*)</complete-match>
+	</provider>
+
+</codesense>
