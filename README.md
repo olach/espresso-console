@@ -4,7 +4,7 @@ This is a plugin for MacRabbit's [Espresso](http://macrabbit.com/espresso/) code
 ![Demo](Demo/console.gif)
 
 ## Features
-This plugin adds autocompletion for:
+This plugin adds autocompletion and parameter hinting for:
 
 ### Console methods
 * `console.assert()`
