@@ -1,3 +1,5 @@
+*This plugin is no longer under development. Espresso has since version 2.2 added autocomplete for the Console methods natively.*
+
 # Console.sugar for Espresso
 This is a plugin for MacRabbit's [Espresso](http://macrabbit.com/espresso/) code editor. It adds autocompletion for the Console API methods supported in the JavaScript Console of your browser.
 
