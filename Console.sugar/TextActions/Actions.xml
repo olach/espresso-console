@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-recipes>
+	
+	<action category="console.root/console.action/0">
+		<title>Log to console</title>
+		<language-context>js</language-context>
+		<script>log.js</script>
+		<key-equivalent>control l</key-equivalent>
+		<setup>
+			<method>log</method>
+		</setup>
+	</action>
+
+</action-recipes>
